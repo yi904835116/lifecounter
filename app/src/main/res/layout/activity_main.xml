@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/layout">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player1"
+        android:id="@+id/p1"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="20pt"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:tag="0"
+        android:id="@+id/p1PlusOne"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/p1" />
+    <Button
+        android:layout_width="20pt"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:tag="0"
+        android:id="@+id/p1MinusOne"
+        android:layout_alignTop="@+id/p1PlusOne"
+        android:layout_toRightOf="@+id/p1PlusOne"
+        android:layout_toEndOf="@+id/p1PlusOne" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:tag="0"
+        android:id="@+id/p1PlusFive"
+        android:layout_toRightOf="@+id/p1MinusOne"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:tag="0"
+        android:id="@+id/p1MinusFive"
+        android:layout_toRightOf="@+id/p1PlusFive"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player2"
+        android:id="@+id/p2"
+        android:layout_below="@+id/p1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="20pt"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:tag="1"
+        android:id="@+id/p2PlusOne"
+        android:layout_toRightOf="@+id/p2"
+        android:layout_below="@+id/p1PlusOne"/>
+    <Button
+        android:layout_width="20pt"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:tag="1"
+        android:id="@+id/p2MinusOne"
+        android:layout_below="@+id/p1MinusOne"
+        android:layout_toRightOf="@+id/p2PlusOne"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:tag="1"
+        android:id="@+id/p2PlusFive"
+        android:layout_below="@+id/p1PlusFive"
+        android:layout_toRightOf="@+id/p2MinusOne"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:tag="1"
+        android:id="@+id/p2MinusFive"
+        android:layout_below="@+id/p1MinusFive"
+        android:layout_toRightOf="@+id/p2PlusFive"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player3"
+        android:id="@+id/p3"
+        android:layout_below="@+id/p2"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="20pt"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:tag="2"
+        android:id="@+id/p3PlusOne"
+        android:layout_toRightOf="@+id/p2"
+        android:layout_below="@+id/p2PlusOne"/>
+    <Button
+        android:layout_width="20pt"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:tag="2"
+        android:id="@+id/p3MinusOne"
+        android:layout_below="@+id/p2MinusOne"
+        android:layout_toRightOf="@+id/p2PlusOne"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:tag="2"
+        android:id="@+id/p3PlusFive"
+        android:layout_below="@+id/p2PlusFive"
+        android:layout_toRightOf="@+id/p2MinusOne"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:tag="2"
+        android:id="@+id/p3MinusFive"
+        android:layout_below="@+id/p2MinusFive"
+        android:layout_toRightOf="@+id/p2PlusFive"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Player4"
+        android:id="@+id/p4"
+        android:layout_below="@+id/p3"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="20pt"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:tag="3"
+        android:id="@+id/p4PlusOne"
+        android:layout_toRightOf="@+id/p2"
+        android:layout_below="@+id/p3PlusOne"/>
+    <Button
+        android:layout_width="20pt"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:tag="3"
+        android:id="@+id/p4MinusOne"
+        android:layout_below="@+id/p3MinusOne"
+        android:layout_toRightOf="@+id/p2PlusOne"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5"
+        android:tag="3"
+        android:id="@+id/p4PlusFive"
+        android:layout_below="@+id/p3PlusFive"
+        android:layout_toRightOf="@+id/p4MinusOne"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5"
+        android:tag="3"
+        android:id="@+id/p4MinusFive"
+        android:layout_below="@+id/p3MinusFive"
+        android:layout_toRightOf="@+id/p4PlusFive"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="20"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/p1Score"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/p1MinusFive"
+        android:layout_toEndOf="@+id/p1MinusFive" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="20"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/p2Score"
+        android:textSize="30sp"
+        android:layout_below="@+id/p1Score"
+        android:layout_toRightOf="@+id/p2MinusFive"
+        android:layout_toEndOf="@+id/p2MinusFive" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="20"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/p3Score"
+        android:textSize="30sp"
+        android:layout_below="@+id/p2Score"
+        android:layout_toRightOf="@+id/p2MinusFive"
+        android:layout_toEndOf="@+id/p2MinusFive" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="20"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/p4Score"
+        android:textSize="30sp"
+        android:layout_below="@+id/p3Score"
+        android:layout_toRightOf="@+id/p2MinusFive"
+        android:layout_toEndOf="@+id/p2MinusFive" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/result"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
+
+
+
+</RelativeLayout>
